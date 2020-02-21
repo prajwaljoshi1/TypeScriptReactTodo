@@ -4,7 +4,7 @@ import { Dispatch } from 'redux';
 
 import { ActionTypes } from './types';
 
-interface Todo {
+export interface Todo {
   id : number;
   title: string;
   completed: boolean;
@@ -12,7 +12,7 @@ interface Todo {
 }
 
 
-interface FetchTodosAction {
+export interface FetchTodosAction {
   type : ActionTypes.fetchTodos;
   payload: Todo[];
 
